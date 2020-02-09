@@ -21,8 +21,7 @@ def send_alert(text):
     """ Send a Message to Slack """
     payload = {'username': "Fortune of the Day",
                "text": "```%s```" % (text),
-               "icon_emoji": ":fortune_cookie:",
-               "link_names": 1}
+               "icon_emoji": ":fortune_cookie:"}
     for hook in HOOK_IDS:
         response = requests.post(BASE_URL + hook, json=payload)
         print(response.text)
