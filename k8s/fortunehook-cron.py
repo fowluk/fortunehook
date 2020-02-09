@@ -4,7 +4,7 @@ metadata:
   name: fortunehook
   namespace: utils
 spec:
-  schedule: "*/15 * * * *"
+  schedule: "30 8 * * *"
   jobTemplate:
     metadata:
       name: fortunehook
