@@ -3,7 +3,6 @@
 """ Check for new tweets and post them to Slack """
 
 import os
-import time
 import subprocess
 import requests
 
@@ -27,9 +26,6 @@ def send_alert(text):
     for hook in HOOK_IDS:
         response = requests.post(BASE_URL + hook, json=payload)
         print(response.text)
-
-    # Rate limit in case of script failure
-    time.sleep(1)
 
 
 def get_hooks():
