@@ -20,5 +20,3 @@ spec:
                - secretRef:
                    name: fortunehookids
          restartPolicy: Never
-         imagePullSecrets:
-           - name: fowluk
