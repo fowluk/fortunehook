@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-""" Check for new tweets and post them to Slack """
+""" Generate a fortune and send it to Slack """
 
 import os
 import subprocess
