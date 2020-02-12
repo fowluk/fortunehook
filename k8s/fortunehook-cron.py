@@ -14,7 +14,7 @@ spec:
         spec:
          containers: 
            - name: fortunehook
-             image: "fowluk/fortunehook:v1.1"
+             image: "fowluk/fortunehook:v1.2"
              envFrom:
                - secretRef:
                    name: fortunehookids
