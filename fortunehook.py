@@ -13,7 +13,7 @@ HOOK_IDS = []
 
 def get_fortune():
     """ Run UNIX fortune and grab the output - get a long fortune """
-    out = subprocess.check_output(['/usr/games/fortune', '-l'])
+    out = subprocess.check_output(['/usr/games/fortune'])
     return out.decode('ascii')
 
 
